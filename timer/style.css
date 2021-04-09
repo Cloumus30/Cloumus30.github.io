@@ -1,0 +1,63 @@
+a{
+    text-decoration: none;
+    color: white;
+}
+.title{
+    text-decoration: none;
+    font-size: 5vw;
+    font-family: 'Fredoka One', cursive;
+}
+.content-timer{
+    font-family: 'Dela Gothic One', cursive;
+    margin-top:5vh;
+    font-size: 10vw;
+}
+.content-timer time:hover{
+    color: rgba(0, 0, 0, 0.541);
+    cursor: pointer;
+}
+.action{
+    margin-top: 10vh;
+}
+
+.btn{
+    font-size: 1.5vw;
+}
+
+footer{
+    /* margin-top: 15p; */
+    position: relative;
+    top: 8.7vh;
+    margin-left: -2vh;
+    height: 5.7vh;
+}
+
+@media screen and (max-width:500px) {
+    .title{
+        font-size: xx-large;
+    }
+    time{
+        font-size: 13vw;
+        margin:0;
+    }
+    .action{
+        margin-top: 35px;
+    }
+    .btn{
+        font-size: x-small;
+    }
+    footer{
+        position: static;
+        margin-top: 173px;
+        margin-left: -2vh;
+        height: 5.7vh;
+    }
+    .modal-title{
+        font-size: medium;
+    }
+    .input-group-text{
+        font-size: small;
+        margin: 0;
+        padding: auto;
+    }
+}

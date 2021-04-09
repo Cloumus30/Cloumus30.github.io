@@ -1,0 +1,88 @@
+body{
+    margin: 0;
+    padding:0;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.title{
+    text-decoration: none;
+    font-size: 5vw;
+    font-family: 'Fredoka One', cursive;
+}
+.content-timer{
+    font-family: 'Dela Gothic One', cursive;
+    margin-top:5vh;
+    margin-left: 0;
+    font-size: 10vw;
+    letter-spacing: -2px;
+}
+
+.action{
+    margin-top: 10vh;
+}
+
+.btn{
+    font-size: 1.5vw;
+}
+
+footer{
+    /* margin-top: 15p; */
+    text-align: center;
+    position: relative;
+    top: 8.7vh;
+    margin-left: -2vh;
+    margin-right: -1.7vh;
+    height: 5.7vh;
+}
+#under-second{
+    font-family: 'Dela Gothic One', cursive;
+    font-size: 3vw;
+    margin-left: 0;
+    letter-spacing: -2px;
+}
+table{
+    font-size: x-large;
+}
+
+.underSec-lap{
+    font-size:1.2rem;
+    margin-left: 0;
+}
+
+
+@media screen and (max-width:480px) {
+    .title{
+        font-size: 10vw;
+    }
+    time{
+        font-size: 14vw;
+    }
+    .action{
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+    .btn{
+        font-size: x-small;
+    }
+    table,td{
+        font-size: medium;
+    }
+    .underSec-lap{
+        font-size: x-small;
+    }
+    footer{
+        position: static;
+        margin-top: 110px;
+        margin-left: -2.5vh;
+        margin-right: -2.3vh;
+        text-align: center;
+        /* height: 5.7vh; */
+        margin-bottom: 0;
+        padding-bottom: 45px;
+    }
+    footer p{
+        margin-bottom:0;
+    }
+}
