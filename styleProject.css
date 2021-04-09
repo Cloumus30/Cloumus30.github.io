@@ -1,0 +1,293 @@
+body{
+    margin:0;
+    padding:0;
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a h3:hover{
+    background-color: rgba(112, 108, 108, 0.603);
+}
+.title{
+    text-align: center;
+    font-family: 'Indie Flower', cursive;
+    font-size: 2vw;
+    margin-top: 0;
+}
+.container-self{
+    display: grid;
+    grid-template-columns: 15vw auto;
+}
+.menu{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    height: 100vh;
+    background-color: rgb(59, 59, 59);
+    border-bottom: 0;
+    border-top: 0;
+    padding-left: 1vw;
+    font-family: 'Indie Flower', cursive;
+    font-size: 2.5vh;
+}
+.menu-title{
+    padding-bottom: 6vh;
+    padding-top: 12vh;
+}
+.content{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    height: 100vh;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+.in-content{
+    padding-top:1vh;
+    font-size: 5vh;
+}
+.card{
+    margin-top: 5vh;
+}
+
+.footer{
+    background-color: rgb(59, 59, 59);
+    text-align: center;
+    padding-top: 25vh;
+    font-size: 3vh;
+}
+
+.actived{
+    background-color: rgba(112, 108, 108, 0.377);
+    padding-left: 15px;
+}
+
+.fa-cloud{
+    position: absolute;
+    color: rgb(201, 227, 245);
+    top:33vh;
+    left: 50vw;
+    font-size: 15vw;
+}
+
+.fa-cloud:hover{
+    animation-play-state: paused;
+    text-shadow: 0px 0px 65px rgb(201, 227, 245);
+    cursor: pointer;   
+}
+
+.hourglass{
+    position: absolute;
+    top: 25vh;
+    left: 32vw;
+    width: 5vw;
+    animation: stopwatchStartAnimate 1s;
+}
+.stopwatch-text{
+    position: absolute;
+    opacity: 0%;
+    top:45vh;
+    left: 36vw;
+    font-size: 3vw;
+    display: none;
+}
+
+.chrono{
+    position: absolute;
+    top: 25vh; 
+    right: 15vw; 
+    width: 5vw;
+    animation: timerStartAnimate 1s;
+}
+
+.timer-text{
+    position:absolute;
+    font-size: 3vw;
+    opacity: 0%;
+    display: none;
+    top: 45vh;
+    right: 22vw;
+}
+
+.chrono:hover, .hourglass:hover{
+    border-radius: 50%;
+    box-shadow: 0 0 25px 15px white;
+}
+
+.showAnimate{
+    animation: showText 0.5s;
+    animation-fill-mode: forwards;
+    opacity: 100%;
+    display: block;
+}
+
+.hiddenAnimate{
+    animation: showText 0.5s;
+    animation-direction: reverse;
+    animation-fill-mode: forward;
+}
+
+.dots{
+    position: absolute;
+    width: 1vw;
+    height: 1vw;
+    border:2px solid white;
+    background-color: white;
+    border-radius: 50%;
+    opacity: 0;
+}
+.dot1{
+    top: 32vh;
+    left: 40vw;
+    animation: fade3 1s;
+}
+.dot2{
+    top: 35vh;
+    left: 43vw;
+    animation: fade2 1s;
+}
+.dot3{
+    top: 38vh;
+    left: 46vw;
+    animation: fade1 1s;
+}
+
+.dot4{
+    top: 35vh;
+    right: 23vw;
+    animation: fade3 1s;
+}
+.dot5{
+    top: 38vh;
+    right: 26vw;
+    animation: fade2 1s;
+}
+.dot6{
+    top: 41vh;
+    right: 29vw;
+    animation: fade1 1s;
+}
+
+@keyframes fade1 {
+    0%{
+        transform: scale(0.5);
+        opacity: 0%;
+    }
+    30%{
+        transform: scale(1);
+        opacity: 100%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+@keyframes fade2 {
+    0%{
+        transform: scale(0.5);
+        opacity: 0%;
+    }
+    60%{
+        transform: scale(1);
+        opacity: 100%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+@keyframes fade3 {
+    0%{
+        transform: scale(0.5);
+        opacity: 0%;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 100%;
+    }
+}
+
+
+@keyframes timerStartAnimate{
+    0%{
+        transform: translate(-17vw,8vw);
+    }
+    100%{
+        transform:translate(0,0);
+    }
+}
+
+@keyframes stopwatchStartAnimate{
+    0%{
+        transform: translate(17vw,8vw);
+    }
+    100%{
+        transform:translate(0,0);
+    }
+}
+
+@keyframes showText{
+    0%{
+        transform:translate(0,-12vh);
+        opacity: 0;
+    }
+    100%{
+        transform:translate(0,0);
+        opacity: 100%;
+        z-index: 1;
+    }
+}
+
+
+@media screen  and (max-width:480px) {
+    .container-self{
+        grid-template-columns: 25vw auto;
+    }
+    .menu,.menu-title,a h3{
+        font-size: 3vh;
+    }
+    .card{
+        margin-top: 4vh;
+    }
+    .in-content{
+        /* margin-left: 6vw; */
+        /* padding-top: 120px; */
+        font-size: 4vh;
+        font-stretch: extra-expanded;
+        z-index: -1;
+    }
+    .title{
+        font-size:4vh;
+        margin-top: 15px;
+    }
+    .flex{
+        padding:0;
+        margin: 25px 0 0 6px;
+        display: flex;
+    }
+
+    .fa-cloud{
+        display:none;
+    }
+
+    .dots{
+        display:none;
+    }
+    .hourglass,.stopwatch-text,.chrono,.timer-text{
+        position: static;
+        opacity: 100%;
+        animation: none;
+    }
+    .hourglass,.chrono{
+        width: 12vw;
+    }
+    .stopwatch-text,.timer-text{
+        font-size: x-large;
+        padding-left: 25px;
+        padding-top: 15px;
+        display: inline;
+    }
+}
