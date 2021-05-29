@@ -12,6 +12,8 @@ us='00';
 
 function start(){
     interval = setInterval(count,10);
+    const btnStart = document.getElementById('btn-start');
+    btnStart.disabled = true;
 }
 
 function count(){
@@ -64,6 +66,8 @@ function reset(){
 
 function pause(){
     clearInterval(interval);
+    const btnStart = document.getElementById('btn-start');
+    btnStart.disabled = false;
 }
 
 function checkTime(i){

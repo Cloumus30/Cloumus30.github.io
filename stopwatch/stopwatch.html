@@ -37,13 +37,13 @@
         <div class="title text-center mt-5">
             StopWatch
         </div>
-        <div class="row">
+        <div class="row container-time">
             <div class="col-lg-9 ms-2">
                 <div class="content-timer">
                     <time data-bs-toggle="modal" data-bs-target="#inputModal">00:00:00</time><span id="under-second">:00</span>
                 </div>
                 <div class="action text-center">
-                    <button type="button" class="btn btn-secondary mx-1" onclick="start()">Start</button>
+                    <button type="button" class="btn btn-secondary mx-1" onclick="start()" id="btn-start">Start</button>
                     <button type="button" class="btn btn-secondary mx-1" onclick="pause()">Pause</button>
                     <button class="btn btn-secondary mx-1" onclick="reset()">reset</button>
                     <button type="button" class="btn btn-secondary mx-1" id="editTimer" onclick="lap()">Lap</button>
