@@ -1,0 +1,371 @@
+.container{
+    display: flex;
+    font-family: Roboto;
+}
+/* SECTION SEBELAH KIRI */
+.sebelah-kiri{
+    width: 500px;
+    /* height: 100%; */
+    padding: 28px 16px 0 31px;
+    background-color: #A594F9;
+    opacity: 0;
+    animation: fade-left 1.5s forwards;
+}
+.img-about{
+    text-align: center;
+    margin-bottom: 45px;
+}
+.img-about img{
+    width: 184px;
+    height: 184px;
+    border-radius: 50%;
+}
+.subtitle-kiri{
+    font-size: 30px;
+    color: white;
+    margin-bottom: 15px;
+    text-decoration: underline;
+}
+.grup-contacts{
+    margin-bottom: 56px;
+}
+.contact-item{
+    display: flex;
+    justify-self: center;
+    margin-bottom: 15px;
+}
+.icon,.contact-text{
+    align-self: center;
+}
+.icon{
+    color:black;
+    font-size: 33px;
+    margin-right: 34px;
+}
+.contact-text,.about-desc{
+    font-size:20px;
+    color: white;
+}
+.contact-link{
+    color: white;
+    font-size: 20px;
+}
+.contact-link:hover{
+    color: rgb(149, 235, 149);
+}
+.about-desc{
+    text-align: justify;
+}
+
+footer{
+    color: white;
+    font-size: 15px;
+    margin-top: 50px;
+    text-align: center;
+}
+/* SECTION SEBELAH KIRI END */
+
+/* SECTION SEBELAH KANAN */
+.sebelah-kanan{
+    padding-left: 81px;
+    padding-top:30px;
+    width: 100%;
+    background-color: #F5DAF0;
+    opacity: 0;
+    animation: fade-right 2s forwards;
+}
+.name-sm,.profession-sm,.garis-sm{
+    display: none;
+}
+.name{
+    font-size: 46px;
+}
+hr{
+    border:3px solid black;
+    width: 65vw;
+}
+.profession{
+    font-size: 36px;
+    margin-bottom: 48px;
+}
+.subtitle-kanan{
+    font-size: 30px;
+    color: #5426D6;
+    text-decoration: underline;
+    margin-bottom:19px;
+}
+.subtitle-kanan-link{
+    color: black;
+    font-size: 20px;
+}
+.subtitle-kanan-link:hover,.education-link:hover,.project-title-link:hover{
+    color: rgb(88, 16, 16);
+}
+.subtitle-kanan-link:hover{
+    color: #5426D6;
+}
+.education{
+    margin-left: 59px;
+    font-size: 20px;
+    margin-bottom: 49px;
+}
+.education-link{
+    color:#5426D6;
+}
+.skill-container{
+    display:flex;
+    margin-bottom: 49px;
+}
+.skill{
+    margin-right: 91px;
+    margin-left: 59px;
+    font-size: 20px;
+}
+.recent-project{
+    margin-left:59px;
+    font-size: 20px;
+}
+.recent-project-item{
+    margin-bottom:41px;
+}
+.project-title{
+    font-size: 25px;
+}
+.project-title-link{
+    font-size: 20px;
+    color: #5426D6;
+}
+.animate-fade{
+    animation: fade 1.5s;
+}
+/* SECTION SEBELAH KANAN END */
+@keyframes fade-left{
+    0%{
+        opacity: 0;
+        transform: translate(-125px,0px);
+    }
+    100%{
+        transform: translate(0,0);
+        opacity: 100%;
+    }
+}
+@keyframes fade-right{
+    0%{
+        opacity: 0;
+        transform: translate(125px,0px);
+    }
+    100%{
+        transform: translate(0,0);
+        opacity: 100%;
+    }
+}
+
+/* Tablet User */
+@media screen and (max-width:1200px){
+    .container{
+        flex-direction: row;
+    }
+    /* SECTION SEBELAH KIRI */
+    .sebelah-kiri{
+        width: 500px;
+        /* height: 100%; */
+        padding: 28px 0px 0px 0px;
+    }
+    .img-about{
+        margin-bottom: 45px;
+    }
+    /* .name-sm,.profession-sm,.garis-sm{
+        display: block;
+        color: white;
+    } */
+    /* .name-sm{
+        font-size: 26px;
+    }
+    .profession-sm{
+        margin-bottom: 45px;
+    }
+    .garis-sm{
+        border: 2px solid white;
+        width: 100%;
+    } */
+    .grup-contacts,.subtitle-kiri,.about-desc{
+        margin-left: 10px;
+    }
+    .subtitle-kiri{
+        font-size: 20px;
+    }
+    .icon{
+        font-size: 23px;
+        margin-right: 24px;
+    }
+    .grup-contacts{
+        margin-bottom: 25px;
+    }
+    .contact-text,.about-desc,.contact-link{
+        font-size:16px;
+        color: white;
+    }
+    .about-desc{
+        margin-right: 10px;
+    }
+    footer{
+        color: white;
+        font-size: 13px;
+        margin-top: 50px;
+        text-align: center;
+    }
+    /* SECTION SEBELAH KIRI END */
+    
+    /* SECTION SEBELAH KANAN */
+    .sebelah-kanan{
+        padding-left: 0px;
+        padding-top:30px;
+    }
+    /* .name,hr,.profession{
+        display: none;
+    } */
+    .name{
+        font-size: 26px;
+    }
+    .profession{
+        font-size: 20px;
+    }
+    hr{
+        border:1px solid black;
+    }
+    .education,.skill,.recent-project{
+        margin-left: 50px;
+    }
+    .subtitle-kanan{
+        margin-left: 20px;
+        font-size: 20px;
+        margin-bottom:19px;
+    }
+    .subtitle-kanan-link{
+        color: black;
+        font-size: 16px;
+    }
+    .education{
+        font-size: 16px;
+        margin-bottom: 49px;
+    }
+    .skill{
+        margin-right: 21px;
+        font-size: 16px;
+    }
+    .recent-project{
+        font-size: 16px;
+    }
+    .recent-project-item{
+        margin-bottom:41px;
+    }
+    .project-title{
+        font-size: 18px;
+    }
+    .project-title-link{
+        font-size: 16px;
+        color: #5426D6;
+    }
+    /* SECTION SEBELAH KANAN END */
+}
+
+/* SmartPhone User */
+@media screen and (max-width:767px){
+    .container{
+        flex-direction: column;
+    }
+    /* SECTION SEBELAH KIRI */
+    .sebelah-kiri{
+        width: 100%;
+        /* height: 100%; */
+        padding: 28px 0px 0px 0px;
+    }
+    .img-about{
+        margin-bottom: 45px;
+    }
+    .name-sm,.profession-sm,.garis-sm{
+        display: block;
+        color: white;
+    }
+    .name-sm{
+        font-size: 26px;
+    }
+    .profession-sm{
+        margin-bottom: 45px;
+    }
+    .garis-sm{
+        border: 2px solid white;
+        width: 100%;
+    }
+    .grup-contacts,.subtitle-kiri,.about-desc{
+        margin-left: 10px;
+    }
+    .subtitle-kiri{
+        font-size: 20px;
+    }
+    .icon{
+        font-size: 23px;
+        margin-right: 24px;
+    }
+    .grup-contacts{
+        margin-bottom: 25px;
+    }
+    .contact-text,.about-desc,.contact-link{
+        font-size:16px;
+        color: white;
+    }
+    .about-desc{
+        margin-right: 10px;
+    }
+    footer{
+        color: white;
+        font-size: 13px;
+        margin-top: 50px;
+        text-align: center;
+    }
+    /* SECTION SEBELAH KIRI END */
+    
+    /* SECTION SEBELAH KANAN */
+    .sebelah-kanan{
+        padding-left: 0px;
+        padding-top:30px;
+        background-color: #F5DAF0;
+    }
+    .name,hr,.profession{
+        display: none;
+    }
+    .subtitle-kanan{
+        margin-left: 10px;
+        font-size: 20px;
+        margin-bottom:19px;
+    }
+    .subtitle-kanan-link{
+        color: black;
+        font-size: 16px;
+    }
+    .education{
+        margin-left: 20px;
+        font-size: 16px;
+        margin-bottom: 49px;
+    }
+    .skill{
+        margin-right: 21px;
+        margin-left: 21px;
+        font-size: 16px;
+    }
+    .recent-project{
+        margin-left:20px;
+        font-size: 16px;
+    }
+    .recent-project-item{
+        margin-bottom:21px;
+    }
+    .project-title{
+        font-size: 18px;
+    }
+    .project-title-link{
+        font-size: 16px;
+        color: #5426D6;
+    }
+    /* SECTION SEBELAH KANAN END */
+}

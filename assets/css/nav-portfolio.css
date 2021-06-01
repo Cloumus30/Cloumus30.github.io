@@ -1,0 +1,44 @@
+@font-face {
+    font-family: Roboto;
+    src: url(./../fonts/Roboto/Roboto-Regular.ttf);
+}
+*{
+    margin:0;
+    padding:0;
+}
+
+.nav-container{
+    font-family: Roboto;
+    width: 100%;
+    background-color: #7371FC;
+}
+.nav-container-item{
+    display: flex;
+    justify-content: center;
+    height: 70px;
+}
+
+.nav-item{
+    list-style: none;
+    padding-top:22px;
+}
+.nav-link{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding:30px 17.5px 26px 17.5px;
+}
+.nav-link:hover{
+    background-color: white;
+    color: #7371FC;
+}
+
+/* Smarphone User */
+@media screen and (max-width:480px){
+    .nav-container-item{
+        height: 60px;
+    }
+    .nav-link{
+        font-size: 13px;
+    }
+}

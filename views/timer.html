@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Fredoka+One&display=swap" rel="stylesheet">
+    <title>Timer</title>
+    <link rel="stylesheet" href="../assets/bootstrap-5/css/bootstrap.min.css">
+    <script src="../assets/bootstrap-5/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./../assets/css/timer.css">
+</head>
+<body>
+    <!-- <audio id="alarm">
+        <source src="alarm.mp3" type="audio/mpeg">
+        Your Browser does not support the Audio
+    </audio> -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <div class="navbar-brand">
+                <a href="./portofolio-main.html"><h3>Cloudias</h3></a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active" >Timer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./stopwatch.html" class="nav-link">StopWatch</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="title text-center mt-5">
+            <p>Timer</p>
+        </div>
+        <div class="content-timer text-center">
+            <time data-bs-toggle="modal" data-bs-target="#inputModal">00 : 00 :00</time>
+        </div>
+        <div class="action text-center">
+            <button type="button" class="btn btn-secondary mx-1" onclick="startCountDown()">Start</button>
+            <button type="button" class="btn btn-secondary mx-1" onclick="pauseCount()">Pause</button>
+            <button class="btn btn-secondary mx-1" onclick="refresh()">reset</button>
+            <button type="button" class="btn btn-secondary mx-1" data-bs-toggle="modal" data-bs-target="#inputModal" id="editTimer">Edit</button>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="inputModal" tabindex="-1" aria-labelledby="inputModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="inputModalLabel">Masukkan Waktu</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                <form action="" method="POST">
+                    <div class="input-group">
+                        <span class="input-group-text">Jam</span>
+                        <input type="number" min="0" class="form-control" id="hours"  onkeyup="checkNum(this)">
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-text">Menit</span>
+                        <input type="number" min="0" max="59" class="form-control" id="minutes"  onkeyup="checkNum(this)">
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-text">Detik</span>
+                        <input type="number" min="0" max="59" class="form-control" id="seconds"  onkeyup="checkNum(this)">
+                    </div>
+                    
+                </form>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="showInput()">Oke</button>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-center">
+        <p class="text-light"> Cloudias @2021</p>
+    </footer>
+    <script src="./../assets/js/timer.js"></script>
+</body>
+</html>

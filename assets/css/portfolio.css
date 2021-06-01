@@ -1,0 +1,166 @@
+body{
+    background-color: #F5EFFF;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: Roboto;
+}
+.img-container{
+    margin:63px 0 33px 0;
+}
+.profile-main-img{
+    width: 242px;
+    height: 242px;
+    border-radius: 50%;
+    opacity: 0;
+    /* animation:fade 1.5s; */
+}
+.student-text,.cloudy-text{
+    font-size: 50px;
+    opacity: 0;
+}
+.student-text{
+    margin-bottom: 81px;
+}
+.btn-container{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 110px;
+}
+.btn-1,.btn-2{
+    border-radius: 38px;
+    font-size: 25px;
+    transition: 0.5s;
+    opacity: 0;
+}
+.btn-1{
+    width: 212px;
+    height: 67px;
+    background-color: #E0607E;
+}
+.btn-2{
+    width: 267px;
+    height: 67px;
+    background-color: #ADBDFF;
+}
+.btn-1:hover,.btn-2:hover,.btn-1 a:hover,.btn-2 a:hover{
+    cursor: pointer;
+    background-color: #7371FC;
+    color: white;
+}
+.btn-link-1,.btn-link-2{
+    text-decoration: none;
+}
+.btn-link-1{
+    color: white;
+}
+.sosmed-icons{
+    font-size: 50px;
+    opacity: 0;
+}
+.icon-link{
+    color: black;
+    text-decoration: none;
+    margin: 0 30px 0 30px;
+    transition: 0.5s;
+}
+.icon-link:hover{
+    font-size: 75px;
+}
+
+.animate-fade{
+    animation: fade 1.5s forwards;
+}
+@keyframes fade {
+    0%{
+        opacity: 0;
+        transform: translate(0,-60px);
+    }
+    100%{
+        opacity: 100%;
+        /* transform: translate(0,0); */
+        transform: none;
+    }
+}
+
+/* Tablet User */
+@media screen and (max-width:768px){
+    .img-container{
+        margin:21px 0 32px 0;
+    }
+    .profile-main-img{
+        width: 155px;
+        height: 155px;
+    }
+    .student-text,.cloudy-text{
+        font-size: 35px;
+    }
+    .student-text{
+        margin-bottom: 55px;
+    }
+    .btn-container{
+        margin-bottom: 94px;
+    }
+    .btn-1,.btn-2{
+        font-size: 18px;
+    }
+    .btn-1{
+        width: 120px;
+        height: 57px;
+    }
+    .btn-2{
+        width: 163px;
+        height: 57px;
+    }
+    .sosmed-icons{
+        font-size: 35px;
+    }
+    .icon-link{
+        margin: 0 18px 0 18px;
+    }
+    .icon-link:hover{
+        font-size: 45px;
+    }
+}
+
+/* Smart PHone User */
+@media screen and (max-width:480px){
+    .img-container{
+        margin:21px 0 32px 0;
+    }
+    .profile-main-img{
+        width: 135px;
+        height: 135px;
+    }
+    .student-text,.cloudy-text{
+        font-size: 25px;
+    }
+    .student-text{
+        margin-bottom: 55px;
+    }
+    .btn-container{
+        margin-bottom: 94px;
+    }
+    .btn-1,.btn-2{
+        font-size: 15px;
+    }
+    .btn-1{
+        width: 110px;
+        height: 47px;
+    }
+    .btn-2{
+        width: 143px;
+        height: 47px;
+    }
+    .sosmed-icons{
+        font-size: 25px;
+    }
+    .icon-link{
+        margin: 0 15px 0 15px;
+    }
+    .icon-link:hover{
+        font-size: 45px;
+    }
+}

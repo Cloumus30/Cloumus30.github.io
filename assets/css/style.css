@@ -1,0 +1,31 @@
+img.profile-image{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+img.login-image{
+    border-radius: 50%;
+    width: 8em;
+    height: 8em;
+}
+img.dashboard-image{
+    border-radius: 50%;
+    width: 12em;
+    height: 12em;
+}
+.side-ul li{
+    color: whitesmoke;
+    font-size: 1.2rem;
+}
+
+.class-ul li a{
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.class-ul li a:hover, .side-ul li a:hover{
+    font-size: 1.8rem;
+}
+.dashboard-table tbody tr th{
+    width: 25%;
+}

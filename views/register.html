@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="js/bootstrap.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="d-flex flex-column justify-content-center align-item-center" style="height:50em;">
+            <div class="justify-content-center align-self-center">
+                <div class="text-center">
+                    <img src="profil.png" alt="Login" class="login-image">
+                    <h2 class="text-center my-4">REGISTER PAGE</h2>
+                </div>
+                <form action="" method="post">
+                    <div class="mb-2">
+                        <label for="username" class="form-label">Username</label>
+                        <input type="text" class="form-control" id="username" name="username" aria-describedby="usernameHelp">
+                        <div id="usernameHelp" class="form-text">Username Help</div>
+                    </div>
+                    <div class="mb-2">
+                        <label for="email" class="form-label">E-mail</label>
+                        <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">Email Help</div>
+                    </div>
+                    <div class="mb-2">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="password" name="password" onkeyup="confirmPass();">
+                        <div class="invalid-feedback">
+                            Password does not match
+                        </div>
+                    </div>
+                    <div class="mb-2">
+                        <label for="password-confirm" class="form-label">password confirm</label>
+                        <input type="password" class="form-control" id="password-confirm" name="password-confirm" onkeyup="confirmPass();"/>
+                        <div class="invalid-feedback">
+                            Password does not match
+                        </div>
+                    </div>
+                    <div class="mb-2">
+                        <input type="checkbox" class="form-check-input" id="keepsign" name="keepsign"/>
+                        <label for="keepsign" class="form-check-label">keepsign</label>
+                    </div>
+                    <div class="mb-2 d-grid gap-2">
+                        <button type="submit" class="btn btn-success" id="submit-button">Register</button>
+                        <div class="form-text">Already have account? <a href="login.html">Login</a></div>
+                    </div>
+
+                    <div class="text-center mt-4">
+                        <div class="form-text fs-7">
+                            @cielhub 2021
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        let pass = document.querySelector('#password');    
+        let passConfirm = document.querySelector('#password-confirm');
+        let submitButton = document.querySelector('#submit-button');
+
+        function confirmPass(){
+            if ((pass.value!=passConfirm.value)||(pass.value==""||passConfirm.value=='')){
+                submitButton.disabled = true;
+                pass.classList.add('is-invalid');
+                passConfirm.classList.add('is-invalid');
+                pass.classList.remove('is-valid');
+                passConfirm.classList.remove('is-valid');
+                submitButton.classList.add('disabled');
+            }
+            else{
+                submitButton.classList.remove('disabled');
+                submitButton.disabled=false;
+                pass.classList.add('is-valid');
+                passConfirm.classList.add('is-valid');
+                pass.classList.remove('is-invalid');
+                passConfirm.classList.remove('is-invalid');
+            }
+        }
+        
+    </script>
+</body>
+</html>
