@@ -1,0 +1,38 @@
+html{
+    overflow-x: hidden; 
+}
+body{
+    overflow-x: hidden; 
+}
+.fa-star{
+    color: orange;
+    margin-right: 15px;
+}
+.side-name{
+    display: block;
+}
+.top-name{
+    display: none;
+}
+.copyright{
+    display: none;
+}
+
+
+@media only screen and (max-width: 980px) {
+    .side-name{
+        display: none;
+    }
+    .top-name{
+        display: block;
+    }
+    .image-dana{
+        height: 100%;
+    }
+    .f-text-lg{
+        display: none;
+    }
+    .copyright{
+        display: block;
+    }
+}

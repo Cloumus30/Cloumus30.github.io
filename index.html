@@ -4,66 +4,326 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/nav-portfolio.css">
-    <link rel="stylesheet" href="./assets/css/portfolio.css">
-    <link rel="stylesheet" href="./assets/fonts/fontawesome-5.15.3-web/css/all.css">
-    <title>Home</title>
+    <script src="https://kit.fontawesome.com/41b0fdebfb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./js/bootstrap.bundle.js"></script>
+    <title>Cloudias</title>
 </head>
-<body>
-    <!-- NAVBAR -->
-    <nav class="nav-container">
-        <ul class="nav-container-item">
-            <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./views/portfolio-about.html">About</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./views/portfolio-projects.html">Projects</a>
-            </li>
-        </ul>
-    </nav>
-<!-- NAVBAR END -->
+<body data-bs-spy="scroll" data-bs-target="#navbar-top" data-bs-offset="25" tabindex="0">
 
-    <!-- CONTENT -->
-    <div class="container">
-        <div class="img-container">
-            <img class="profile-main-img" src="./assets/img/image-Cloudy.jpg" alt="Gambar Profil">
+    <!-- Navbar Start -->
+    <nav id="navbar-top" class="navbar fixed-top navbar-expand navbar-dark" style="background-color: #343a40;">
+        <div class="container-fluid">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="nav nav-pills me-auto ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link text-white" aria-current="page" href="#section-me">Me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#section-skills">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#section-portfolio">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#section-contact">Contact</a>
+              </li>
+              
+            </ul>
+          </div>
         </div>
-        <p class="cloudy-text">I'm Cloudy</p>
-        <p class="student-text">STUDENT || WEB DEVELOPER</p>
+      </nav>
+      <!-- Navbar End -->
 
-        <div class="btn-container">
-            <button class="btn-1">
-                <a class="btn-link-1" href="./views/portfolio-about.html">KNOW ME</a>
-            </button>
-            <button class="btn-2">
-                <a class="btn-link-2" href="./views/portfolio-projects.html">SEE MY PROJECTS</a>
-            </button>
+    <h1 id="section-me" class="mb-0" style="background-color: #e9ecef;"></h1>
+
+    <div class="row py-5 container-fluid mx-0" style="background-color: #e9ecef;">
+        <h1 class="fs-1 top-name mt-5"><strong>Cloudias Imani Pradana</strong> </h1>
+            <h3 class="top-name">Student</h3>
+        <div class="image-dana col-lg-7 text-lg-center">
+            <img src="./img/Dana3.png" alt="Gambar 3" style="height: 80%;">
         </div>
+        <div class="summary col-lg-5 mt-lg-5">
 
-        <div class="sosmed-icons">
-            <a href="https://api.whatsapp.com/send?phone=6281369622964" class="icon-link">
-                <i class="fab fa-whatsapp"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/cloudias-imani-pradana-971b05204/" class="icon-link">
-                <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="https://www.facebook.com/cloudiasimani/" class="icon-link">
-                <i class="fab fa-facebook"></i>
-            </a>
-            <a href="https://www.instagram.com/cloudiasimani/" class="icon-link">
-                <i class="fab fa-instagram-square"></i>
-            </a>
-            <a href="mailto:danapradana30@gmail.com" class="icon-link">
-                <i class="fas fa-envelope"></i>
-            </a>
+            <h1 class="fs-1 side-name"><strong>Cloudias Imani Pradana</strong> </h1>
+            <h3 class="side-name">Student</h3>
+            <p class="fs-5 mt-lg-5 mt-5 mb-lg-5 mb-5">Hello Cloudy Here, I am Student in Surabaya East Java Indonesia. Coding is my hobbies and i want to make it as my carrer, specially in web programming. Please to explore my website and contact me for some project you’ll need. :)</p>
+            <div class="text-center d-flex justify-content-around">
+                <a href="#section-contact" class="btn btn-success btn-lg  mt-lg-5">Contact Me</a>
+                <a href="#section-portfolio" class="btn btn-primary btn-lg  mt-lg-5">My Work</a>
+            </div>
 
         </div>
-
     </div>
 
-    <script src="./assets/js/portfolio.js"></script>
+    <h1 id="section-skills" class="pt-5 mb-0"></h1>
+    <!-- Skills Container STart -->
+    <div class="container">
+        <h1 class="text-center">SKILLS</h1>
+        <!-- Row Skills Start -->
+        <div class="row pt-5">
+            <!-- Col 1 Start -->
+            <div class="col-lg-4 ">
+                <div class="row mb-3 justify-content-around">
+                    <div class="col-3 fs-5">
+                        <p>
+                            <strong>HTML</strong>
+                        </p>
+                    </div>
+                    <div class="col-6 p-0">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="row mb-3 justify-content-around">
+                    <div class="col-3 fs-5">
+                        <p>
+                            <strong>CSS</strong>
+                        </p>
+                    </div>
+                    <div class="col-6 p-0 ms-3">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="row mb-3 justify-content-around">
+                    <div class="col-3 fs-5">
+                        <p>
+                            <strong>Javascript</strong>
+                        </p>
+                    </div>
+                    <div class="col-6 p-0 ms-3">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="row mb-3 justify-content-around">
+                    <div class="col-3 fs-5">
+                        <p>
+                            <strong>PHP</strong>
+                        </p>
+                    </div>
+                    <div class="col-6 p-0 ms-3">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="row mb-3 justify-content-around">
+                    <div class="col-3 fs-5">
+                        <p>
+                            <strong>Git</strong>
+                        </p>
+                    </div>
+                    <div class="col-6 p-0 ms-3">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="row mb-3 justify-content-around">
+                    <div class="col-3 fs-5">
+                        <p>
+                            <strong>Python</strong>
+                        </p>
+                    </div>
+                    <div class="col-6 p-0 ms-3">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- Col 1 End -->
+
+            <!-- Col 2 Start -->
+            <div class="col-lg-4">
+                <div class="row mb-3 justify-content-around">
+                    <div class="col-3 fs-5">
+                        <p>
+                            <strong>Node Js</strong>
+                        </p>
+                    </div>
+                    <div class="col-6 p-0 ms-3">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="row mb-3 justify-content-around">
+                    <div class="col-3 fs-5">
+                        <p>
+                            <strong>MYSQL</strong>
+                        </p>
+                    </div>
+                    <div class="col-6 p-0 ms-3">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="row mb-3 justify-content-around">
+                    <div class="col-3 fs-5">
+                        <p>
+                            <strong>PostgreSQL</strong>
+                        </p>
+                    </div>
+                    <div class="col-6 p-0 ms-3">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="row mb-3 justify-content-around">
+                    <div class="col-3 fs-5">
+                        <p>
+                            <strong>Laravel</strong>
+                        </p>
+                    </div>
+                    <div class="col-6 p-0 ms-3">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="row mb-3 justify-content-around">
+                    <div class="col-3 fs-5">
+                        <p>
+                            <strong>Express</strong>
+                        </p>
+                    </div>
+                    <div class="col-6 p-0 ms-3">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- Col 2 End -->
+
+            <div class="col-lg-4">
+                <div class="row mb-3 justify-content-around">
+                    <div class="col-3 fs-5">
+                        <p>
+                            <strong>Express</strong>
+                        </p>
+                    </div>
+                    <div class="col-6 p-0 ms-3">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="row mb-3 justify-content-around">
+                    <div class="col-3 fs-5">
+                        <p>
+                            <strong>Laravel</strong>
+                        </p>
+                    </div>
+                    <div class="col-6 p-0 ms-3">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="row mb-3 justify-content-around">
+                    <div class="col-3 fs-5">
+                        <p>
+                            <strong>Python</strong>
+                        </p>
+                    </div>
+                    <div class="col-6 p-0 ms-3">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+               
+            </div>
+
+        </div>
+        <!-- Row Skills End -->
+    </div>
+    <!-- Skills Container End -->
+    
+    <h1 id="section-portfolio" class="pb-5 mb-0" style="background-color: #e9ecef;"></h1>
+    
+    <!-- Portfolio Container Start -->
+    <div class="container-fluid" style="background-color: #e9ecef;">
+        <h1 class="text-center">Latest Project</h1>
+        <!-- Protfolio Cards Start -->
+        <div class="d-flex flex-wrap container mt-lg-5">
+
+            <div class="card ms-5 mb-5" style="width: 15rem;">
+                <div class="card-body">
+                  <h5 class="card-title">Blog Website</h5>
+                  <p class="card-text">My Personal project to make website app similar with wordpress (CMS) but it has less feature. It can edit a article/blog and show it, to make a blog you must sign in first with
+                      <ul>
+                          <li>username: cloudias</li>
+                          <li>password: 123456</li>
+                      </ul>
+                  </p>
+                  <p class="card-text"><strong>Technology:</strong> NodeJs, Express, PostgreSQL, Sequelize, HerokuApp</p>
+                  <a href="#" class="btn btn-info text-white">Visit</a>
+                </div>
+            </div>
+            <div class="card ms-5 mb-5" style="width: 15rem;">
+                <div class="card-body">
+                  <h5 class="card-title">Portfolio Website v.1</h5>
+                  <p class="card-text">This is my Portfolio Website before this website, and this was builded with html,css, javascript and also hosted at github page
+                  </p>
+                  <p class="card-text"><strong>Technology:</strong> HTML, CSS, Javascript, GithubPage</p>
+                  <a href="./portfolio_1.html" class="btn btn-info text-white">Visit</a>
+                </div>
+            </div>
+            
+
+        </div>
+        <!-- Protfolio Cards End -->
+    </div>
+    <!-- Portfolio Container End -->
+
+    <h1 id="section-contact" class="pb-5 mb-0"></h1>
+    <!-- Contact Container Start -->
+    <div class="container">
+        <h1 class="text-center">CONTACT</h1>
+        <div class="d-flex flex-wrap py-5 justify-content-between ms-5 ms-lg-0">
+            <a href="https://wa.me/6281369622964" data-bs-toggle="tooltip" class=" mx-5 my-4 mx-lg-0 my-lg-0" title="62813-6962-2964">
+                <img src="./img/WA.png" alt="" style="width: 130px;">
+            </a>
+
+            <a href="mailto: danapradana30@gmail.com" data-bs-toggle="tooltip" class="mx-5 my-4 mx-lg-0 my-lg-0" title="danapradana30@gmail.com">
+                <img src="./img/email.png" alt="" style="width: 130px;">
+            </a>
+
+            <a href="https://www.linkedin.com/in/cloudias-imani-pradana-971b05204/" data-bs-toggle="tooltip" class="mx-5 my-4 mx-lg-0 my-lg-0" title="linkedin.com/in/cloudias-imani-pradana-971b05204/">
+                <img src="./img/linkedin.png" alt="" style="width: 130px;">
+            </a>
+
+            <a href="https://www.instagram.com/cloudiasimani/" data-bs-toggle="tooltip" class="mx-5 my-4 mx-lg-0 my-lg-0" title="@cloudiasimani">
+                <img src="./img/instagram.png" alt="" style="width: 130px;">
+            </a>
+
+            <a href="https://github.com/Cloumus30" data-bs-toggle="tooltip" class="mx-5 my-4 mx-lg-0 my-lg-0" title="Cloumus30">
+                <img src="./img/github.png" alt="" style="width: 130px;">
+            </a>
+
+        </div>
+    </div>
+
+
+    <footer class=" d-flex justify-content-around bg-dark text-white text-center mt-5 flex-wrap" style="height: 50px;">
+        <p class="align-self-center copyright">&copy;Cloudias 2021</p>
+        <p class="align-self-center f-text-lg">Email: danapradana30@gmail.com</p>
+        <p class="align-self-center f-text-lg">WA: 0813-6962-2964</p>
+        <p class="align-self-center f-text-lg">Ig: @cloudiasimani</p>
+    </footer>
 </body>
 </html>
